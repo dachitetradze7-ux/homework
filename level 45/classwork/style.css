@@ -1,0 +1,32 @@
+body {
+    font-size: 20px;
+}
+
+div {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:30px
+}
+
+
+h1 {
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+@media (max-width:2000px) {
+    div {
+        flex-direction: column;
+        gap:20px
+    }
+}
+
+@media (min-width: 500px) {
+    div {
+        flex-direction: column;
+        gap: 10px
+    }
+}

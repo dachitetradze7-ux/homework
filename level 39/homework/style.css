@@ -1,0 +1,99 @@
+  /*  css reset */
+
+ body {
+    background-color: blue;
+    font-family: georgia;
+}
+
+
+.cards {
+    width: 1000px;
+    margin: 60px;
+    display: flex;
+    gap: 20px;
+    background: fixed;
+    padding: 20px;
+    border-radius: 12px;
+    
+}
+
+
+.card {
+    height: 200px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.card h1,p {
+    position: relative;
+    z-index: 1;
+    
+}
+
+.card h1 {
+    font-size: 30px;
+
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.korea{
+    background-image: url("download.png");
+}
+
+.georgia {
+    background-image: url("download\ \(1\).png");
+}
+
+.italy {
+    background-image: url("download\ \(2\).jpg");
+}
+
+.germany {
+    background-image: url("download\ \(3\).png");
+}  
+
+
+/* .email-box { 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.email-box h2 {
+    margin-bottom: 15px;
+    color: black
+
+}
+
+.email-box form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-box input {
+    width: 260px;
+    padding: 15px;
+    border-radius: 100px;
+    border: 200px;
+
+}
+
+.email-box button:hover {
+    background: #ff22;
+} */
+
+

@@ -1,0 +1,40 @@
+body {
+    font-size: 5em;
+}
+
+.container {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.item {
+    background-color: rgb(red, green, blue);
+    border:2px solid gray;
+}
+
+.item-1 {
+    grid-column: span 5;
+    text-align: center;
+}
+
+.item-2{
+    grid-row: span 5;
+    grid-column: span 1.7;
+    text-align: center;
+}
+
+.item-3 {
+    grid-row: span 5;
+    grid-column: span 3;
+    text-align: center;
+}
+
+.item-4 {
+    grid-row: span 5;
+    text-align: center;
+}
+
+.item-5 {
+    text-align: center;
+    grid-template-rows: span 5;
+}

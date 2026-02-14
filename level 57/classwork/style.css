@@ -1,0 +1,26 @@
+/* body {
+    height: 100vh;
+    text-align: center;
+}
+
+#playerOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#playerOptions img {
+    max-width: 100px;
+}
+
+#rockBtn, #paperBtn, #scissorsBtn {
+    width: 300px;
+    height: 300px;
+
+} */

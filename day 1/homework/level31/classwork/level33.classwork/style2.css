@@ -1,0 +1,32 @@
+input {
+    border-radius: 6px;
+    width: 15;
+    height: 10;
+}
+/* attribute selector- selector[attribute="value"] */
+
+input {
+    background-color: gray;
+}
+
+input[type="email"] {
+    background-color: #333;
+}
+
+input[type="pasword"] {
+    box-shadow: 0 0 8px #333;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 15px #333;
+
+}
+
+/*
+1 elementis id, class
+2 shtamomavali selector
+3 multiselectorr
+4 pseudo class selector
+5 attribute selector
+
+*/

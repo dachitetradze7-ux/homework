@@ -1,0 +1,115 @@
+/* .container {
+  display: grid;
+
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: auto 200px 150px auto;
+
+  grid-template-areas:
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer";
+
+  gap: 20px;
+  
+  
+}
+
+
+.item-1 { grid-area: header; }
+.item-2 { grid-area: sidebar; }
+.item-3 { grid-area: content1; }
+.item-4 { grid-area: content2; }
+.item-5 { grid-area: content3; }
+.item-6 { grid-area: footer; }
+
+
+.container div  {
+  border: 2px solid #555;
+  padding: 10px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.item-1 {
+    
+    background-color: purple;
+    text-align: center;
+    
+}
+
+.item-2 {
+    background-color: aquamarine;
+    text-align: center;
+
+}
+
+.item-3 {
+    background-color: skyblue;
+    text-align: center;
+}
+
+
+.item-3 {
+    background-color: skyblue;
+    text-align: center;
+}
+
+
+.item-4 {
+    background-color: skyblue;
+    text-align: center;
+
+}
+.item-5 {
+    background-color: skyblue;
+    text-align: center;
+}
+
+.item-6 {
+    background-color: purple;
+    text-align: center;
+} */
+
+
+/* .container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas: "hero hero hero box3 box3"
+                        "hero hero hero box4 box4"
+                        "box2 box2 box2 box2 box2"
+                        "box5 box6 box7 box8 box9"
+    
+}
+
+
+.box {
+    background: linear-gradient(130deg, #ff4ecd, #ff6a5c);
+    color:white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+
+.box-1 {grid-area: hero; height:200px;}
+.box-2 {grid-area: box2;}
+.box-3 {grid-area: box3;}
+.box-4 {grid-area: box4;}
+.box-5 {grid-area: box5;}
+.box-6 {grid-area: box6;}
+.box-7 {grid-area: box7;}
+.box-8 {grid-area: box8;}
+.box-9 {grid-area: box9;} */
+
+
+
+

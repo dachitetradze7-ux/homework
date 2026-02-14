@@ -1,0 +1,32 @@
+/* body {
+    font-size: 40px;
+}
+
+.box-one {
+    background-color: #eb5757;
+    border: 10px solid #7e1893;
+
+    padding: 20px;
+    margin: 40px;
+}
+
+.box-two {
+    background-color: #5454eb;
+    border: 10px solid #25a525;
+
+    padding: 20px;
+    margin: 40px
+} */
+
+#content {
+    background-color: #eb5757;
+    border:20px solid #7e1893
+}
+
+#border {
+    background-color: #459318;
+    padding: 20px;
+}
+
+
+

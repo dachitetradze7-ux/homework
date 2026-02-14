@@ -1,0 +1,200 @@
+/* css reset */
+/* div {
+    display: flex;
+    height:200px;
+    background-color: seagreen;
+    margin:auto
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+    
+} */
+
+/* body {
+    font-size: 40px;
+    height: 100vh;
+}
+
+
+.container {
+    border: 5-px solid red;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+
+    gap: 20px;
+    align-items: stretch;
+
+    
+    
+}
+
+.child {
+    background-color: aquamarine;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 150px;
+}
+
+.one {
+    flex-grow: 1;
+    flex-shrink: 0.5;
+    
+    
+
+
+
+    
+} */
+
+
+
+/* 
+positions
+static სტატიკური ყველა ელემენტის თავდაპირველი პოზიცია რომელიც ელემენტს ჩვეულებრივ html ის განლაგებაში სვამს
+relative 
+absolute
+fixed
+sticky */
+
+
+
+/* body {
+    font: size 40px;
+}
+
+.parent{
+    background-color: blueviolet;
+    padding: 200px;
+    position: relative;
+    width: 500px;
+}
+
+.items {
+    padding: 20px;
+    position: absolute;
+    right:20px;
+}
+
+.one {
+    background-color: green;
+    position:absolute;
+    right: 20px;
+    padding: 5px;
+}
+
+.two {
+    background-color: brown;
+    padding: 15px;
+}
+
+.three {
+    background-color: blue;
+    padding: 10px;
+} */
+
+/* 
+body {
+    background-color: black;
+}
+
+input[type="text"], input[type="email"] {
+    border:1px solid #16eb23;
+    background-color: #17233b;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    background-color: skyblue;
+    border-radius: 15px;
+    border:none;
+    font-weight: bold;
+    color: #ffff;
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+}
+
+input[type="submit"]:active{
+    background-color: #17233b;
+    color:orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #ff9903
+} */
+
+
+
+
+/* h2, p {
+    background-color: #ffff;
+
+}
+
+div {
+    width: 50%;
+} */
+
+
+/* .padded-box {
+    border:2px solid orange;
+    padding: 20px;
+    color:#ffff;
+}
+
+.default-box {
+    border:2px solid orange;;
+    color:#ffff;
+}
+
+body {
+    background-color: black;
+} */
+
+/* .custom-box2 {
+    border: 2px solid orange;
+    padding: 10px;
+    margin: 10px;
+    color: #ffff;
+
+}
+
+.custom-box1 {
+    border: 2px solid orange;
+    padding: 10px;
+    color: #ffff;
+}
+
+.default-box {
+    border: 2px solid orange;
+    color: #ffff;
+}
+
+body {
+    background-color: black;
+}
+ */
+
+/* 
+a {
+    display: block;
+    border:2px solid orange;
+    text-decoration: none;
+} */
+

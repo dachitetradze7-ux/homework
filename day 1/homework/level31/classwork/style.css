@@ -1,0 +1,530 @@
+/* input {
+    border: 2px solid gray;
+    color: rgb(30, 180, 118);
+    background-color: rgb(30, 67, 118);
+
+    width: 200px;
+    height: 25px;
+
+    border-radius: 8px;
+}
+
+input[type="email"] {
+    background-color: green;
+} */
+/* 
+button:hover {
+    background-color: green;
+}
+button:active {
+    box-shadow: 5px 5px 25px rgb(58, 109, 58);
+} */
+
+/* a {
+    text-decoration: none;
+}
+a:link {
+    color:purple;
+}
+
+a:visited {
+    color:yellow;
+} */
+
+
+/* body{
+    background-color: rgb(0, 128, 68);
+
+    padding:0px;
+    margin:0px
+
+}
+
+div{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+.info{
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+h1{
+    background-color: rgb(0, 128, 68);
+} */
+
+
+/* body {
+    background-color: #3333;
+}
+
+h1 {
+    text-decoration: underline;
+    color: #f28d35;
+}
+
+h2 {
+    text-decoration: overline;
+  color: #6BBE92;
+}
+
+h3 {
+    text-decoration: line-through;
+    color: #D83367;
+}
+
+h4 {
+    text-decoration: underline and overline;
+    color: #149EF2;
+    
+    
+} */
+
+/* body {
+    background-color: #f3f4f6 ;
+    color: #3333
+}
+
+h1 {
+    text-align: center;
+    color: #555555;
+}
+
+.article-title {
+    text-decoration: underline #ff4500;
+    font-size: 24px;
+} */
+
+
+/* p {
+    font-size: 18px;
+}
+
+.double {
+    text-decoration: doule underline #e67112;
+}
+
+.dotted {
+    text-decoration: underline dotted  #2a9d8f;
+}
+
+
+.dashed {
+    text-decoration: dashed underline  #e76f51;
+}
+
+.wavy {
+    text-decoration: wavy underline #62ee62;
+} */
+
+/* .capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+
+body {
+    background-color: blueviolet;
+    color:aqua
+} */
+
+
+/* body {
+    background-color: black;
+}
+
+h1 {
+    color: #ffff;  /* white colored text */
+    /* text-shadow: 15px 12px 5px #149EF2;
+    font-size:medium */
+
+/* 
+body {
+    background-color: black;
+    font-size: 24px;
+    color: white;
+}
+
+#font-georgia {
+    font-family: Georgia, ;
+}
+
+#font-arial {
+    font-family: Arial;
+}
+
+#font-courier {
+    font-family: "courier new";
+}
+
+#font-comic {
+    font-family: "Comic Sans MS";
+} */
+
+
+/* some of web safe fonts:Arial,  Courier New, Times   New Roman,Trebuchet MS, Verdana. */
+
+
+/* #font1 {
+    font-family: Georgia;
+}
+
+#font2 {
+    font-family: Tahoma;
+}
+
+#font3 {
+    font-family: Lucida Console;
+}
+
+#font4 {
+    font-family: Verdana;
+} */
+
+
+/* .serif-font { */
+    /* fonts have decorative strokes or serifs */
+    /* font-family: serif; */
+/* } */
+
+/* .sans-serif-font { */
+    /* fonts lack decorative strokes */
+    /* font-family: sans-serif;
+} */
+
+/* .monospace-font { */
+    /* fonts have equal character spacing */
+    /* font-family: monospace;
+
+} */
+
+/* .cursive-font { */
+    /* Fonts mimic handwriting for 
+  a personal or artistic touch. */
+  /* font-family: cursive;
+} */
+
+/* .fantasy-font { */
+    /* Decorative or unique fonts
+  not fitting other categories */
+  /* font-family: fantasy;
+} */
+
+/* body {
+    background-color: brown;
+    color: #ffffff;
+} */
+
+
+/* p {
+    font-family: Arial,  sans-serif;
+    font-size: 1.5em;
+}
+
+#light {
+    font-weight: 100;
+}
+
+#normal {
+    font-weight: 400;
+}
+
+#bold {
+    font-weight: 700;
+}
+
+#bolder {
+    font-weight: 900;
+} */
+
+/* body {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    color:red;
+}
+
+
+p {
+    font-weight: bolder;
+    font-family: monospace;
+    color:blue;
+    text-transform: capitalize;
+}
+
+button:hover{
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+    background-color: greenyellow;
+    /* ფსევდო selectoris არჩევა ხდება : ით */
+
+
+/* body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aliceblue;
+    color:black;
+    text-align: center;
+}
+
+a:hover {
+    color:greenyellow;
+    font-family: 'Segoe UI', Tahoma;
+    background-color: whitesmoke;
+
+} */
+    /* defines styles unvisited links */
+/* a:link {
+    color:purple;
+    text-decoration: none;
+} */
+/* link is hovered when the mouse is over it */
+/* a:hover {
+    color:blue;
+    background-color: #0000;
+} */
+/* click on the link but has not released the mouse button yet */
+/* a:active {
+    color: yellow;
+    background-color: #0000;
+} */
+
+/* body {
+    font-size: 20px;
+    text-align: center;
+} */
+/* 
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}
+
+#table1 {
+    border:  2px solid black;
+
+
+}
+
+#table2 th,
+#table2 td {
+    border: 2px solid black;
+}
+
+td {
+    text-align: left;
+}
+
+
+th {
+    text-align: left;
+    background-color: blue;
+} */
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #000A23;
+  color: rgb(255, 253, 253);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+  border: 1px #FAFAFA;
+  text-align: center;
+}
+
+th {
+  background-color: #5B52DD;
+} */
+
+
+/* body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    color:#333;
+}
+
+tr:nth-child(odd){
+    background-color: orange;
+}
+
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border:2px solid #909090
+} */
+
+
+/* .trends {
+    list-style-type: square;
+}
+
+.most-watched {
+    list-style-type: circle;
+}
+
+.new-arrivals {
+    list-style-type: disc;
+}
+
+.classics {
+    list-style-type: none;
+}
+
+body {
+    background-color: aquamarine;
+    color:#ffff;
+    font-size: 18px;
+}
+
+h2 {
+    color:gray;
+    text-align: center;
+} */
+/* 
+.top-selling {
+  list-style-type: decimal-leading-zero;
+}
+
+.classic {
+  list-style-type: decimal;
+}
+
+.biographies {
+  list-style-type: lower-roman;
+}
+
+.fantasy {
+  list-style-type: upper-roman;
+}
+
+h1,h2 {
+  background-color: #FFA055;
+  text-align: center;
+}
+
+li {
+  font-size: 18px;
+} */
+
+/* body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: brown;
+    color: white;
+    font-size:18px;
+}
+
+ul {
+    list-style-image:url('download.png');
+    background-color: blue;
+    
+}
+
+li {
+    font-weight: 600;
+    text-shadow: 2px 2px 3px grey;
+} */
+
+/* 
+body{
+  background-color: #0C1527;
+}
+
+input[type="text"], input[type="email"] {
+  border: 1px solid #FF9E03;
+  background-color: #17233B;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
+  color: #FF9E03;
+} */
+
+/* body{
+  background-color: #0C1527;
+}
+
+input[type="text"], input[type="email"] {
+  border: 1px solid #FF9E03;
+  background-color: #17233B;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+input[type='submit'] {
+  background-color: #149EF2;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  width: 70px;
+  height: 40px;
+  font-size: 18px;
+}
+
+label {
+  font-weight: bold;
+  color: #FF9E03;
+} */
+
+
+body{
+  background-color: #0C1527;
+}
+
+input[type="text"], input[type="email"] {
+  border: 1px solid #FF9E03;
+  background-color: #17233B;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+input[type='submit'] {
+  background-color: #149EF2;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+input[type='submit']:active {
+  background-color: #0C1527;
+  color: #FF9E03;
+  border: 1px solid #FF9E03;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #FF9E03;
+}
