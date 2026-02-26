@@ -1,0 +1,13 @@
+#parent {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+
+#child {
+    width: 40px;
+    height: 40px;
+    background-color:red;
+    position: absolute;
+}

@@ -46,8 +46,8 @@ btn.onclick = function () {
 let saidYes =   confirm("sure?");
 
 
-let movie = prompr("favourite movie")
-console.log("green mile")
+let movie = prompt("favourite movie")
+console.log(movie)
 
 let username = prompt("enter username")
 alert("hello" + username)
