@@ -1,0 +1,5 @@
+city  = input("where you from: ")
+age = input("how old are you: ")
+name  = input("what's your name: ")
+surname = input("what is your surname: ")
+print("you are from " + city + "you are " + age + "old "+ "your name is " + name  + "your surname is " + surname )

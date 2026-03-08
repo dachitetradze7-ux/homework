@@ -68,24 +68,55 @@
 // console.log(firstName)
 // console.log(dinosaur)
 // console.log(height)
-// const {username="jon doe", dinosaur=true, height} = personAccount
+// const {username="jon doe", dinosaur=true, } = personAccount
 // console.log(username)
 // console.log(dinosaur)
 // console.log(height)
 
 // console.log(personAccount)
 
-//rest, spread
+// // rest, spread
 // const nums = [11, 30, 60]
 // const numbers = [10, 20,  40, 60]
 // const [ num1, num2, ...others] = numbers
 // console.log(num1)
 // console.log(num2)
 // console.log(others)
-function anything(...otherArguments) {
-    console.log(`First: ${argument1}`)
-    console.log(`Others: ${otherArguments}`)
+// function anything(...otherArguments) {
+//     console.log(`First: ${argument1}`)
+//     console.log(`Others: ${otherArguments}`)
+// }
+
+// anything("asdf", true, 343452, "adsrffgd")
+
+// function Account(firstName, lastName, email, password, balance){
+//     this.firstName
+//     this.lastName
+//     this.email
+// }
+
+
+// let account1 = new Account("luka")
+
+// console.log(account1.firstName)
+
+class Account {
+    constructor(firstName, lastName, email, password, balance){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.balance = balance
+    }
+
+    deposit () {
+        this.balance +=100
+    }
+
 }
-
-anything("asdf", true, 343452, "adsrffgd")
-
+let obj1 = new Account("luka", "gurgenidze", "ragaca@gmail.com", "12345", 100)
+let obj2 = new Account("dachi", "tetradze", "vigaca@gmail.com", "231231", 200)
+console.log(obj1)
+console.log(obj2)
+obj1.deposit()
+obj2.deposit()

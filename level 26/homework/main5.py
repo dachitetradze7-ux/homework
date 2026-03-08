@@ -30,7 +30,7 @@ def factorial(num):
     for i in range(1, num + 1):
         result *= i
     return result
-print(factorial(10000000))
+print(factorial(1))
 
 
     
