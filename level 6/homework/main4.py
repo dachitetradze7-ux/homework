@@ -1,0 +1,3 @@
+# / - es matematikuri operacia  abrunebs floats - 5.0
+# // - es matematikuri operacia abrunebs ints - 20, 10...
+# % - es matematkuri operacia abrunebs nashts.

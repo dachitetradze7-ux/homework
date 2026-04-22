@@ -25,7 +25,7 @@
 // let house = new doctor('Dr.house', "medical derextor")
 // house.heal()
 
-// set - wyoba, masivi ar sheileba elementebis ganmeoreba
+// // set - wyoba, masivi ar sheileba elementebis ganmeoreba
 // let myArray = [1, 2, 3, 5,]
 // let mySet = new Set[myArray]
 // console.log(mySet)
@@ -73,7 +73,7 @@
 
 
 
-//promise - 
+// promise - 
 // const promise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //         myNumber += 5
@@ -92,26 +92,26 @@
 // .then((result) =>{
 //     console.log(result)
 // })
-let main = document.querySelector('main');
-let input = document.querySelector('input');
-let button = document.querySelector('button');
-button.addEventListener("click",  fetchInfo, input.value)
+// let main = document.querySelector('main');
+// let input = document.querySelector('input');
+// let button = document.querySelector('button');
+// button.addEventListener("click",  fetchInfo, input.value)
 
 
-function  rednerInfo() {
-    console.log(info)
+// function  rednerInfo() {
+//     console.log(info)
 
-    main.innerHTML += `
-        <div>
-        <h2>${info.name}</h2>
-        <img src="${info.avatar_url}"/>
-        <p>followers: ${info.followers}</p>
-        </div>
+//     main.innerHTML += `
+//         <div>
+//         <h2>${info.name}</h2>
+//         <img src="${info.avatar_url}"/>
+//         <p>followers: ${info.followers}</p>
+//         </div>
 
 
-    `
+//     `
 
-}
+// }
 
 
 
