@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman - Keyboard Support</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .game-container {
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        #hangman-viz {
+            font-family: monospace;
+            white-space: pre;
+            background: #222;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            line-height: 1.2;
+            display: inline-block;
+        }
+
+        #word-display {
+            font-size: 2.2em;
+            letter-spacing: 10px;
+            margin: 20px 0;
+            color: #34495e;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #message {
+            font-size: 1.1em;
+            font-weight: bold;
+            height: 25px;
+            margin-bottom: 20px;
+        }
+
+        .win { color: #27ae60; }
+        .lose { color: #e74c3c; }
+
+        .letters {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        button.letter-btn {
+            padding: 10px 5px;
+            cursor: pointer;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 6px;
+            transition: all 0.2s;
+            font-weight: bold;
+        }
+
+        button.letter-btn:disabled { background: #bdc3c7; cursor: not-allowed; opacity: 0.6; }
+
+        .restart-btn {
+            padding: 12px 30px;
+            cursor: pointer;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="game-container">
+    <h1>Hangman</h1>
+    <div id="hangman-viz"></div>
+    <div id="word-display"></div>
+    <div id="message"></div>
+    <div class="letters" id="letters-container"></div>
+    <button class="restart-btn" onclick="resetGame()">Axali Tamashi (Enter)</button>
+    <p style="font-size: 0.8em; color: #7f8c8d; margin-top: 15px;">Shegidzlia gamoiyeno klaviatura (A-Z)</p>
+</div>
+
+<script>
+    const words = [
+        "atami", "vashli", "banani", "marwyvi", "fortokhali", 
+        "vinigreti", "tbilissi", "batumi", "kompiuteri", "klaviatura",
+        "velosipedi", "manqana", "sakhli", "fanjara", "mze", 
+        "mtvare", "varskvlavi", "okeane", "mdinare", "skola",
+        "shokoladi", "programireba", "javascript", "samshoblo"
+    ];
+
+    const stages = [
+        `  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========`,
+        `  +---+\n  |   |\n  O   |\n      |\n      |\n      |\n=========`,
+        `  +---+\n  |   |\n  O   |\n  |   |\n      |\n      |\n=========`,
+        `  +---+\n  |   |\n  O   |\n /|   |\n      |\n      |\n=========`,
+        `  +---+\n  |   |\n  O   |\n /|\\  |\n      |\n      |\n=========`,
+        `  +---+\n  |   |\n  O   |\n /|\\  |\n /    |\n      |\n=========`,
+        `  +---+\n  |   |\n  O   |\n /|\\  |\n / \\  |\n      |\n=========`
+    ];
+
+    let selectedWord = "";
+    let guessedLetters = [];
+    let mistakes = 0;
+    let isGameOver = false;
+
+    function initLetters() {
+        const alphabet = "abcdefghijklmnopqrstuvwxyz";
+        const container = document.getElementById('letters-container');
+        container.innerHTML = "";
+        
+        alphabet.split('').forEach(letter => {
+            const btn = document.createElement('button');
+            btn.textContent = letter.toUpperCase();
+            btn.className = 'letter-btn';
+            btn.id = `btn-${letter}`; // Id-s mienisheba klaviaturistvis
+            btn.onclick = () => handleGuess(letter);
+            container.appendChild(btn);
+        });
+    }
+
+    function resetGame() {
+        selectedWord = words[Math.floor(Math.random() * words.length)];
+        guessedLetters = [];
+        mistakes = 0;
+        isGameOver = false;
+        
+        document.getElementById('message').textContent = "";
+        document.getElementById('message').className = "";
+        document.getElementById('hangman-viz').textContent = stages[0];
+        
+        initLetters();
+        updateDisplay();
+    }
+
+    function updateDisplay() {
+        const display = selectedWord
+            .split('')
+            .map(l => guessedLetters.includes(l) ? l : "_")
+            .join(" ");
+            
+        document.getElementById('word-display').textContent = display;
+
+        if (!display.includes("_")) {
+            document.getElementById('message').textContent = "good/kargia! Shen moige! 🏆";
+            document.getElementById('message').className = "win";
+            isGameOver = true;
+            disableAllButtons();
+        }
+    }
+
+    function handleGuess(letter) {
+        if (isGameOver || guessedLetters.includes(letter)) return;
+
+        
+        const btn = document.getElementById(`btn-${letter}`);
+        if (btn) btn.disabled = true;
+
+        if (selectedWord.includes(letter)) {
+            guessedLetters.push(letter);
+            updateDisplay();
+        } else {
+            guessedLetters.push(letter); 
+            mistakes++;
+            if (mistakes < stages.length) {
+                document.getElementById('hangman-viz').textContent = stages[mistakes];
+            }
+            
+            if (mistakes === stages.length - 1) {
+                document.getElementById('message').textContent = `noo/araa Sityva iyo: ${selectedWord.toUpperCase()}`;
+                document.getElementById('message').className = "lose";
+                isGameOver = true;
+                disableAllButtons();
+            }
+        }
+    }
+
+    function disableAllButtons() {
+        const buttons = document.querySelectorAll('.letter-btn');
+        buttons.forEach(btn => btn.disabled = true);
+    }
+
+    
+    window.addEventListener('keydown', (e) => {
+        const key = e.key.toLowerCase();
+        
+        
+        if (key === 'enter') {
+            resetGame();
+        }
+        
+        
+        if (/^[a-z]$/.test(key)) {
+            handleGuess(key);
+        }
+    });
+
+    resetGame();
+</script>
+
+</body>
+</html>
