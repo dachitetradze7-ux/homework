@@ -88,6 +88,25 @@
             font-weight: bold;
             text-transform: uppercase;
         }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 15px;
+            background-color: #00ff00;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s ease;
+
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow:  0 0 15px #3b82f6;
+        }
+
     </style>
 </head>
 <body>
@@ -100,6 +119,7 @@
     <div class="letters" id="letters-container"></div>
     <button class="restart-btn" onclick="resetGame()">Axali Tamashi (Enter)</button>
     <p style="font-size: 0.8em; color: #7f8c8d; margin-top: 15px;">Shegidzlia gamoiyeno klaviatura (A-Z)</p>
+    <a href="index.html" class="back=btn">back to main page</a>
 </div>
 
 <script>
