@@ -3,33 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>skills🚨</title>
+    <title>Skills</title><link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    <header>skills🚨</header>
-
-
+<body class="skills-page">
+    <header class="skills-title">skills 🎯</header>
+    <div class="skills-list">
+        <div class="skills-item">HTML</div>
+        <div class="skills-item">CSS</div>
+        <div class="skills-item">python</div>
+        <div class="skills-item">Javascript</div>
+    </div>
 
     <a href="index.html" class="back-btn">back to main page</a>
     <style>
-        .back-btn {
-    display: inline-block;
-    padding:  12px 25px;
-    background-color:  greenyellow;
-    color: #cbd5e1;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: 0.3s;
-    justify-content: flex-end;
-    text-align: end;
-}
+        body.skills-page {
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
 
-.back-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px rgba(59, 130, 240, 0.6);;
-}
+        }
+
+        .skills-title{
+            font-size: 2.0rem;
+            font-weight: bold;
+            color: #3b3b3b;
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            max-width: 250px;
+            margin-bottom: 25px;
+        }
+
+        .skills-item{
+            background-color: rgb(red, green, blue);
+            padding: 20px 20px;
+            border-radius: 10px;
+            border: 2px solid rgb(red, green, blue);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .skills-page .back-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: greenyellow;
+            color: #0b1120;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .skills-page .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow:  0 0 15px rgba(red, green, blue, alpha);
+        }
+
+        .skills-item {
+            background-color: rgba(red, green, blue, alpha);
+            padding:  15px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(red, green, blue, alpha);
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.4s ease;
+        }
+
+        .skills-item:hover{
+            transform: scale(1.1);
+            border-color:#3b82f6;
+            background-color: rgba(red, green, blue, alpha);
+            cursor: pointer;
+        }
+        
     </style>
     
+    
 </body>
-</html>
+</html>  
+
+
